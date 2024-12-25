@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="svg/logo.svg">
+    <link favicon="svg/logo.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ingénierie logicielle - Numeratech</title>
+</head>
+
+<body>
+    <header class="bg-blue-950 text-white text-center font-bold fixed w-full top-0 z-50 px-20 py-4">
+        <nav class="flex justify-between items-center shadow-md">
+            <div class="w-5/12 flex items-center">
+                <a class="text-2xl font-bold text-white" href="/">
+                    Numeratech
+                </a>
+            </div>
+            <div class="w-1/12 flex justify-center items-center">
+                <a href="/">
+                    <img src="svg/logo.svg" alt="logo" width="60" height="60">
+                </a>
+            </div>
+            <div class="w-5/12">
+                <ul class="flex justify-end items-center gap-6 uppercase text-md text-white">
+                    <li>
+                        <a href="a-propos.html" class="relative group py-1 transition duration-300 inline-block">A
+                            propos
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div id="expertise-dropdown" class="relative inline-block text-left">
+                            <button class="relative group py-1 transition duration-300 inline-block uppercase">
+                                Notre expertise
+                                <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                        d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div id="expertise-dropdown-content"
+                                class="absolute hidden overflow-hidden bg-white shadow-lg rounded-md w-48 mt-2 right-0 z-10">
+                                <a href="ingenierie-logicielle.html"
+                                    class="block px-4 py-2 text-blue-800 hover:bg-gray-100">Ingénierie logicielle</a>
+                                <a href="integration-automatisation.html"
+                                    class="block px-4 py-2 text-blue-800 hover:bg-gray-100">Intégration et
+                                    automatisation</a>
+                                <a href="transition-numerique.html"
+                                    class="block px-4 py-2 text-blue-800 hover:bg-gray-100">Transition
+                                    numérique</a>
+                                <a href="marketing-digital.html"
+                                    class="block px-4 py-2 text-blue-800 hover:bg-gray-100">Marketing
+                                    digital</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="relative group py-1 transition duration-300 inline-block">Contact
+                            <span
+                                class="absolute left-0 bottom-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="relative flex flex-col justify-center items-center h-screen select-none px-20 pt-16">
+        <video class="absolute inset-0 w-full h-full object-cover" autoplay muted loop playsinline
+            id="video-background">
+            <source src="videos/keyboard-2.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 text-center">
+            <p class="text-4xl font-bold text-white drop-shadow-sm">Ingénierie logicielle</p>
+            <h1 class="text-7xl font-bold text-white drop-shadow-sm">Nous concevons et développons vos applications
+            </h1>
+        </div>
+        <div class="absolute bottom-4 z-10 text-center animate-bounce w-full">
+            <a class="cursor-default w-full" href="#services">
+                <p class="text-white text-2xl drop-shadow-sm">▼</p>
+                <p class="text-white text-sm drop-shadow-sm">▼</p>
+            </a>
+        </div>
+    </section>
+    <section id="services" class="relative flex flex-col justify-center items-center h-screen select-none px-20">
+    </section>
+    <footer class="bg-blue-950 text-white p-4 text-center font-bold px-16">
+        <p>© Numeratech - <span id="year">2024</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/tailwind.js"></script>
+</body>
+
+</html>
