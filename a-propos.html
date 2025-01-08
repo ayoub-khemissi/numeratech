@@ -79,8 +79,8 @@
     </header>
     <section id="qui-sommes-nous"
         class="relative flex flex-col justify-center items-center min-h-screen select-none px-20 pt-16">
-        <div class="flex justify-between items-center h-full gap-x-10">
-            <div class="w-1/2">
+        <div class="flex flex-wrap items-center h-full">
+            <div class="lg:w-1/2 w-full p-8">
                 <p class="mb-4">
                     Dans un monde où tout évolue à la vitesse de la lumière, le numérique est la clé pour garder une
                     longueur
@@ -141,7 +141,14 @@
                     plus qu'un partenaire, c'est un
                     véritable accélérateur de votre <strong>transformation numérique</strong>.
             </div>
-            <div class="w-1/2"></div>
+            <div class="lg:w-1/2 w-full p-8">
+                <div class="relative rounded-lg overflow-hidden w-full h-full py-60">
+                    <video class="absolute inset-0 w-full h-full object-cover rounded-lg z-10" autoplay muted loop playsinline
+                        id="video-background">
+                        <source src="videos/world.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
         <video class="absolute inset-0 w-full h-full object-cover opacity-10 -z-10" autoplay muted loop playsinline
             id="video-background">
