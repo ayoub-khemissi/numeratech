@@ -74,7 +74,81 @@
             </div>
         </nav>
     </header>
-    <section class="relative flex flex-col justify-center items-center h-screen select-none px-20 pt-16">
+    <section class="text-blue-800 relative flex flex-col justify-center items-center h-screen select-none px-20 pt-16">
+        <div class="bg-gradient-to-r from-primary to-blue-600 w-full">
+            <div class="w-full text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Contactez-nous</h1>
+                <p class="text-xl">
+                    Nous sommes là pour répondre à vos questions et vous accompagner dans vos projets.
+                </p>
+            </div>
+        </div>
+
+        <div class="py-10 lg:px-20 w-full">
+            <div class="max-w-7xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Écrivez-nous !</h2>
+                        <form class="space-y-6">
+                            <div>
+                                <input name="name" placeholder="Votre nom" required class="w-full p-4 border rounded" />
+                            </div>
+                            <div>
+                                <input name="email" type="email" placeholder="Votre email" required
+                                    class="w-full p-4 border rounded" />
+                            </div>
+                            <div>
+                                <input name="subject" placeholder="Sujet" required class="w-full p-4 border rounded" />
+                            </div>
+                            <div>
+                                <textarea name="message" placeholder="Votre message" required
+                                    class="w-full p-4 border rounded min-h-[150px]"></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-blue-800 text-white py-3 rounded-full hover:bg-blue-700">
+                                Envoyer votre message
+                            </button>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6">Nos coordonnées</h2>
+                        <div class="space-y-6">
+                            <div class="p-6 border rounded">
+                                <div class="flex items-start space-x-4">
+                                    <div class="h-6 w-6 text-primary flex-shrink-0">📍</div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">Notre adresse</h3>
+                                        <p class="text-gray-600">
+                                            123 Avenue de la République<br />
+                                            75011 Paris, France
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 border rounded">
+                                <div class="flex items-start space-x-4">
+                                    <div class="h-6 w-6 text-primary flex-shrink-0">📞</div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">Téléphone</h3>
+                                        <p class="text-gray-600">+33 1 23 45 67 89</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 border rounded">
+                                <div class="flex items-start space-x-4">
+                                    <div class="h-6 w-6 text-primary flex-shrink-0">✉️</div>
+                                    <div>
+                                        <h3 class="font-semibold mb-2">Email</h3>
+                                        <p class="text-gray-600">contact@numeratech.fr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
