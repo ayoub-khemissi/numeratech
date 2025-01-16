@@ -17,19 +17,19 @@
 </head>
 
 <body class="text-blue-900">
-    <header class="bg-blue-950 text-white text-center font-bold fixed w-full top-0 z-50 px-20 py-4">
+    <header class="bg-blue-950 text-white text-center font-bold fixed w-full top-0 z-50 px-8 md:px-20 py-4">
         <nav class="flex justify-between items-center shadow-md">
-            <div class="w-5/12 flex items-center">
+            <div class="flex items-center">
                 <a class="text-2xl font-bold text-white" href="index.html">
                     Numeratech
                 </a>
             </div>
-            <div class="w-1/12 flex justify-center items-center">
+            <div class="absolute left-1/2 transform -translate-x-1/2">
                 <a href="index.html">
                     <img src="svg/logo.svg" alt="logo" width="60" height="60">
                 </a>
             </div>
-            <div class="w-5/12">
+            <div class="hidden lg:flex">
                 <ul class="flex justify-end items-center gap-6 uppercase text-md text-white">
                     <li>
                         <a href="a-propos.html"
@@ -75,7 +75,60 @@
                     </li>
                 </ul>
             </div>
+            <div class="lg:hidden">
+                <button id="burger-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
+        <div id="mobile-menu" class="hidden lg:hidden pt-5">
+            <ul class="flex flex-col items-center gap-6 uppercase text-md text-white">
+                <li>
+                    <a href="a-propos.html"
+                        class="relative group py-1 transition duration-300 inline-block whitespace-nowrap">A
+                        propos
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li>
+                    <div id="expertise-dropdown-mobile" class="relative inline-block text-left">
+                        <button
+                            class="relative group py-1 transition duration-300 inline-block uppercase whitespace-nowrap">
+                            Notre expertise
+                            <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="expertise-dropdown-content-mobile"
+                            class="absolute hidden overflow-hidden bg-white shadow-lg rounded-md w-48 mt-2 right-0 z-10">
+                            <a href="ingenierie-logicielle.html"
+                                class="block px-4 py-2 text-blue-900 hover:bg-gray-100">Ingénierie logicielle</a>
+                            <a href="integration-automatisation.html"
+                                class="block px-4 py-2 text-blue-900 hover:bg-gray-100">Intégration et
+                                automatisation</a>
+                            <a href="transition-numerique.html"
+                                class="block px-4 py-2 text-blue-900 hover:bg-gray-100">Transition
+                                numérique</a>
+                            <a href="marketing-digital.html"
+                                class="block px-4 py-2 text-blue-900 hover:bg-gray-100">Marketing
+                                digital</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html"
+                        class="relative group py-1 transition duration-300 inline-block whitespace-nowrap">Contact
+                        <span
+                            class="absolute left-0 bottom-0 w-0 h-1 bg-white transition-all duration-300 group-hover:w-full"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
     <section id="qui-sommes-nous"
         class="relative flex flex-col justify-center items-center min-h-screen select-none px-20 py-12">
