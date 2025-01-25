@@ -17,7 +17,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 20vh;
+  padding: 6rem 0;
 }
 
 .parallax-landing-top {
