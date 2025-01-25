@@ -11,3 +11,39 @@ h5,
 h6 {
   font-family: 'Lexend', sans-serif;
 }
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20vh;
+}
+
+.parallax-landing-top {
+  background-image: url('img/parallax-landing-top.jpg');
+}
+
+.parallax-landing-middle {
+  background-image: url('img/parallax-landing-middle.jpg');
+}
+
+.parallax-landing-bottom {
+  background-image: url('img/parallax-landing-bottom.jpg');
+}
+
+.parallax-service-one {
+  background-image: url('img/parallax-service-one.jpg');
+}
+
+.parallax-service-two {
+  background-image: url('img/parallax-service-two.jpg');
+}
+
+.parallax-service-three {
+  background-image: url('img/parallax-service-three.jpg');
+}
+
+.parallax-service-four {
+  background-image: url('img/parallax-service-four.jpg');
+}
