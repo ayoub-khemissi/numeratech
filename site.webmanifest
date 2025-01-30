@@ -1,0 +1,25 @@
+{
+  "name": "Numeratech",
+  "short_name": "Numeratech",
+  "description": "Votre partenaire expert en ingénierie logicielle, automatisation, transition numérique et marketing digital.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1E3A8A",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "lang": "fr",
+  "dir": "ltr"
+}
